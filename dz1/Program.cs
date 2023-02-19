@@ -7,12 +7,12 @@
 
 string Rever(string str)
 {
-    char[] result = new char[str.Length];
-    for (int i = str.Length-1, j = 0; i >=0; i--,j++)
+    string result = String.Empty;
+    for (int i = str.Length-1; i >=0; i--)
     {
-        result[j] = str[i];
+        result = result + str[i];
     }
-    return new String(result);
+    return result;
 }
 
 Console.WriteLine("Введите число");
