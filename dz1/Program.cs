@@ -16,7 +16,7 @@ string Rever(string str)
 }
 
 Console.WriteLine("Введите число");
-string str = Console.ReadLine() ?? "";
+string str = Console.ReadLine() ?? String.Empty;
 if (str.All(Char.IsDigit))
     if(str == Rever(str))
         Console.WriteLine("Является палиндромом");
